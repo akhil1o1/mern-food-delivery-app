@@ -6,7 +6,6 @@ function RestaurantSearch() {
   return (
     <>
       <Search />
-      <Typography variant="h5">restaurant Search page</Typography>
     </>
   );
 }
