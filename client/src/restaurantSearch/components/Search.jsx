@@ -5,7 +5,7 @@ import InputComponent from "../../UIElements/formElements/InputComponent";
 import classes from "./Search.module.css";
 
 function Search() {
-  return (
+  return (<section>
     <Box className={`${classes.banner} center`}>
       <Box
         width="8rem"
@@ -44,6 +44,7 @@ function Search() {
         />
       </Box>
     </Box>
+    </section>
   );
 }
 
