@@ -1,5 +1,3 @@
-import { Typography } from "@mui/material";
-
 import Search from "../components/Search";
 import QuickSearch from "../components/QuickSearch";
 

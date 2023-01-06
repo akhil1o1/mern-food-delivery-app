@@ -9,7 +9,13 @@ import classes from "./QuickSearch.module.css";
 function QuickSearch() {
   return (
     <section className={classes.quick_search_section}>
-      <Typography variant="h2" mt="2rem" fontWeight="800" fontSize="2rem" color="#192F60">
+      <Typography
+        variant="h2"
+        mt="2rem"
+        fontWeight="800"
+        fontSize="2rem"
+        color="#192F60"
+      >
         Quick Searches
       </Typography>
       <Typography variant="body1" color="#8C96AB">

@@ -5,9 +5,13 @@ import {
   CardActionArea,
   Typography,
 } from "@mui/material";
+import {Link} from "react-router-dom";
+
+import classes from "./MealCard.module.css";
 
 function MealCard({ category, description, image }) {
   return (
+    
     <Card
       sx={{
         display: "flex",
@@ -17,6 +21,7 @@ function MealCard({ category, description, image }) {
           "rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px",
       }}
     >
+    <Link className={classes.card_link} to="/restaurantsByLocation">
       <CardActionArea>
         <CardMedia
           component="img"
@@ -38,7 +43,9 @@ function MealCard({ category, description, image }) {
           </Typography>
         </CardContent>
       </CardActionArea>
+      </Link>
     </Card>
+   
   );
 }
 

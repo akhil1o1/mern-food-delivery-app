@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import RestaurantSearch from "./restaurantSearch/pages/RestaurantSearch";
 import RestaurantsByLocation from "./restaurantsByLocation/pages/RestaurantsByLocation";
 import RestaurantDetails from "./restaurantDetails/pages/restaurantDetails";
+import Footer from "./assets/Footer/Footer";
 
 import './App.css';
 
@@ -30,6 +31,7 @@ function App() {
         <Route path="/restaurantDetails" element={<RestaurantDetails/>}/>
       </Routes>
     </Router>
+    <Footer/>
     </ThemeProvider>
   );
 }
