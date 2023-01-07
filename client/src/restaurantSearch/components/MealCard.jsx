@@ -27,7 +27,7 @@ function MealCard({ category, description, image }) {
           component="img"
           height="200"
           image={image}
-          alt="breakfast food items"
+          alt="food items"
         />
         <CardContent>
           <Typography
