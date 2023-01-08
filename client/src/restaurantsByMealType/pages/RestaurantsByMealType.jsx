@@ -16,9 +16,15 @@ function RestaurantsByMealType() {
       >
         Breakfast Places in Mumbai
       </Typography>
-      <Box display="flex" alignItems="center" justifyContent="space-between">
-        <Filter />
-        <Stack>
+      <Box display="flex" gap="2.5rem" justifyContent="space-between">
+      <Box flex="0.25">
+      <Filter />
+      </Box>
+        
+        <Stack flex="0.75" spacing={5}>
+          <RestaurantCard/>
+          <RestaurantCard/>
+          <RestaurantCard/>
           <RestaurantCard/>
         </Stack>
       </Box>

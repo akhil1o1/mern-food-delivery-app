@@ -5,7 +5,7 @@ import lunchImg from "../../assets/restaurantSearch/lunch.png";
 import snacksImg from "../../assets/restaurantSearch/snacks.png";
 import nightlifeImg from "../../assets/restaurantSearch/nightlife.png";
 
-export const mealCardsData = [
+export const mealTypeCardsData = [
   {
     category: "Breakfast",
     description: "Start your day with exclusive breakfast options.",

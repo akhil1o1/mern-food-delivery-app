@@ -9,7 +9,6 @@ function Filter() {
   return (
     <Card
       sx={{
-        flex:"0.25",
         borderRadius: "10px",
         padding:"20px",
         boxShadow:

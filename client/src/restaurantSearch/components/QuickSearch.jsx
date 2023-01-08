@@ -2,7 +2,7 @@ import { nanoid } from "nanoid";
 import { Typography, Box } from "@mui/material";
 import MealTypeCard from "./MealTypeCard";
 
-import { mealCardsData } from "../data/mealCardsData";
+import { mealTypeCardsData } from "../data/mealTypeCardsData";
 
 import classes from "./QuickSearch.module.css";
 
@@ -29,7 +29,7 @@ function QuickSearch() {
         alignItems="center"
         justifyContent="space-between"
       >
-        {mealCardsData.map((data) => (
+        {mealTypeCardsData.map((data) => (
           <MealTypeCard
             key={nanoid()}
             category={data.category}
