@@ -1,6 +1,6 @@
 import { nanoid } from "nanoid";
 import { Typography, Box } from "@mui/material";
-import MealCard from "./MealCard";
+import MealTypeCard from "./MealTypeCard";
 
 import { mealCardsData } from "../data/mealCardsData";
 
@@ -30,7 +30,7 @@ function QuickSearch() {
         justifyContent="space-between"
       >
         {mealCardsData.map((data) => (
-          <MealCard
+          <MealTypeCard
             key={nanoid()}
             category={data.category}
             description={data.description}

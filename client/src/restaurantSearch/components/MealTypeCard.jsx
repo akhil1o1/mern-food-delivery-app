@@ -7,9 +7,9 @@ import {
 } from "@mui/material";
 import {Link} from "react-router-dom";
 
-import classes from "./MealCard.module.css";
+import classes from "./MealTypeCard.module.css";
 
-function MealCard({ category, description, image }) {
+function MealTypeCard({ category, description, image }) {
   return (
     
     <Card
@@ -21,7 +21,7 @@ function MealCard({ category, description, image }) {
           "rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px",
       }}
     >
-    <Link className={classes.card_link} to="/restaurantsByLocation">
+    <Link className={classes.card_link} to="/restaurantsByMealType">
       <CardActionArea>
         <CardMedia
           component="img"
@@ -49,4 +49,4 @@ function MealCard({ category, description, image }) {
   );
 }
 
-export default MealCard;
+export default MealTypeCard;

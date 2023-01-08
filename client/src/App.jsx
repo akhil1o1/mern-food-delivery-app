@@ -2,7 +2,7 @@ import {createTheme, ThemeProvider} from "@mui/material";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 import RestaurantSearch from "./restaurantSearch/pages/RestaurantSearch";
-import RestaurantsByLocation from "./restaurantsByLocation/pages/RestaurantsByLocation";
+import RestaurantsByMealType from "./restaurantsByMealType/pages/RestaurantsByMealType";
 import RestaurantDetails from "./restaurantDetails/pages/restaurantDetails";
 import Footer from "./Footer/Footer";
 
@@ -27,7 +27,7 @@ function App() {
     <Router>
       <Routes>
         <Route path="/restaurantSearch" element={<RestaurantSearch/>}/>
-        <Route path="/restaurantsByLocation" element={<RestaurantsByLocation/>}/>
+        <Route path="/restaurantsByMealType" element={<RestaurantsByMealType/>}/>
         <Route path="/restaurantDetails" element={<RestaurantDetails/>}/>
       </Routes>
     </Router>

@@ -1,5 +1,8 @@
+import { nanoid } from "nanoid";
 import { FormGroup, FormControlLabel, Checkbox } from "@mui/material";
 import FilterHeading from "./FilterHeading";
+
+const cousines = ["South Indian", "Chinese", "Fast Food", "Street Food"];
 
 function Cousine() {
   return (
@@ -10,10 +13,13 @@ function Cousine() {
           control={<Checkbox defaultChecked />}
           label="North Indian"
         />
-        <FormControlLabel control={<Checkbox />} label="South Indian" />
-        <FormControlLabel control={<Checkbox />} label="Chinese" />
-        <FormControlLabel control={<Checkbox />} label="Fast Food" />
-        <FormControlLabel control={<Checkbox />} label="Street Food" />
+        {cousines.map((cousine) => (
+          <FormControlLabel
+            key={nanoid()}
+            control={<Checkbox />}
+            label={cousine}
+          />
+        ))}
       </FormGroup>
     </>
   );
