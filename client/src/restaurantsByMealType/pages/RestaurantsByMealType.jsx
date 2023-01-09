@@ -1,6 +1,7 @@
 import { Typography, Box, Stack } from "@mui/material";
 import Filter from "../components/Filter/Filters";
 import RestaurantCard from "../components/Restaurant/RestaurantCard";
+import PaginationRounded from "../components/Restaurant/PaginationRounded";
 
 import classes from "./RestaurantByMealType.module.css"
 
@@ -20,7 +21,6 @@ function RestaurantsByMealType() {
       <Box flex="0.25">
       <Filter />
       </Box>
-        
         <Stack flex="0.75" spacing={5}>
           <RestaurantCard/>
           <RestaurantCard/>
@@ -28,6 +28,7 @@ function RestaurantsByMealType() {
           <RestaurantCard/>
         </Stack>
       </Box>
+      <PaginationRounded/>
     </section>
   );
 }
