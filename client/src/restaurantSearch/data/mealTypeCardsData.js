@@ -1,9 +1,9 @@
-import breakfastImg from "../../assets/restaurantSearch/breakfast.png";
-import dinnerImg from "../../assets/restaurantSearch/dinner.png";
-import drinksImg from "../../assets/restaurantSearch/drinks.png";
-import lunchImg from "../../assets/restaurantSearch/lunch.png";
-import snacksImg from "../../assets/restaurantSearch/snacks.png";
-import nightlifeImg from "../../assets/restaurantSearch/nightlife.png";
+import breakfastImg from "../../assets/images/breakfast.png";
+import dinnerImg from "../../assets/images/dinner.png";
+import drinksImg from "../../assets/images/drinks.png";
+import lunchImg from "../../assets/images/lunch.png";
+import snacksImg from "../../assets/images/snacks.png";
+import nightlifeImg from "../../assets/images/nightlife.png";
 
 export const mealTypeCardsData = [
   {
