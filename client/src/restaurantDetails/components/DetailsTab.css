@@ -1,0 +1,14 @@
+.MuiTabs-root button{
+    color: #192F60;
+  }
+  .MuiTabs-root button:active{
+    color: #192F60;
+  }
+  .Mui-selected{
+    color: #192F60 !important;
+  }  
+
+  .MuiTabs-indicator{
+    background-color: #CE0505 !important;
+  }
+
