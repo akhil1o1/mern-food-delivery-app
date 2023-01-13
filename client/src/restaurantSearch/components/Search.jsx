@@ -16,7 +16,7 @@ function Search() {
           className="center"
           backgroundColor="#fff"
         >
-          <Typography variant="h3" color="error.dark" fontWeight="700">
+          <Typography variant="h3" color="#CE0505" fontWeight="700">
             FDS
           </Typography>
         </Box>
