@@ -1,5 +1,6 @@
 import { Box, Typography } from "@mui/material";
 import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined";
+import FmdGoodOutlinedIcon from '@mui/icons-material/FmdGoodOutlined';
 
 import InputComponent from "../../UIElements/formElements/InputComponent";
 import classes from "./Search.module.css";
@@ -30,10 +31,11 @@ function Search() {
         </Typography>
         <Box display="flex" flexDirection="row" gap="3%" mt="2%">
           <InputComponent
-            type="basic"
+            type="input-with-icon"
             id="search-location"
             placeholder="Please type a location"
             variant="outlined"
+            icon={<FmdGoodOutlinedIcon/>}
           />
           <InputComponent
             type="input-with-icon"

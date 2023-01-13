@@ -6,7 +6,7 @@ function Info({ title, description }) {
       <Typography mb="1rem" fontSize="1.1rem" fontWeight="500" color="#192F60">
         {title}
       </Typography>
-      <Typography fontSize="1rem" color="#192F60">
+      <Typography fontSize="1rem" color="#192F60" width="35%">
         {description}
       </Typography>
     </Box>

@@ -6,6 +6,7 @@
 .banner{
     background-image: url("../../assets/images/restaurantDetailsBanner.jpg");
     height: 60vh;
+    border-radius: 10px;
     background-size: cover;
     background-repeat: no-repeat;
     object-fit: cover;

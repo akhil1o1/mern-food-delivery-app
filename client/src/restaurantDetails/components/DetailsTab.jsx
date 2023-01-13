@@ -2,6 +2,7 @@ import { useState } from "react";
 import {Tabs, Tab, Typography, Box} from "@mui/material";
 import PropTypes from "prop-types";
 import Overview from "./Overview";
+import Contact from "./Contact";
 
 import "./DetailsTab.css";
 
@@ -79,7 +80,7 @@ function DetailsTab() {
         <Overview/>
       </TabPanel>
       <TabPanel value={value} index={1}>
-        Item Two
+        <Contact/>
       </TabPanel>
     </Box>
   );
