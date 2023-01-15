@@ -1,6 +1,6 @@
 import { Box, Typography } from "@mui/material";
 import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined";
-import FmdGoodOutlinedIcon from '@mui/icons-material/FmdGoodOutlined';
+import FmdGoodOutlinedIcon from "@mui/icons-material/FmdGoodOutlined";
 
 import InputComponent from "../../UIElements/formElements/InputComponent";
 import classes from "./Search.module.css";
@@ -9,22 +9,20 @@ function Search() {
   return (
     <section>
       <Box className={`${classes.banner} center`}>
-        <Box
-          width="8rem"
-          height="8rem"
-          borderRadius="100%"
-          className="center"
-          backgroundColor="#fff"
+        <Typography
+          fontStyle="italic"
+          variant="h3"
+          fontSize="5rem"
+          color="#fff"
+          fontWeight="800"
         >
-          <Typography variant="h3" color="#CE0505" fontWeight="700">
-            FDS
-          </Typography>
-        </Box>
+          FDS
+        </Typography>
         <Typography
           variant="h1"
           fontSize="2.5rem"
           mt="2%"
-          fontWeight="600"
+          fontWeight="500"
           color="#fff"
         >
           Find the best restaurants, cafés, and bars
@@ -35,7 +33,7 @@ function Search() {
             id="search-location"
             placeholder="Please type a location"
             variant="outlined"
-            icon={<FmdGoodOutlinedIcon/>}
+            icon={<FmdGoodOutlinedIcon />}
           />
           <InputComponent
             type="input-with-icon"

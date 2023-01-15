@@ -1,5 +1,5 @@
 import { useState } from "react";
-import {Tabs, Tab, Typography, Box} from "@mui/material";
+import { Tabs, Tab, Box } from "@mui/material";
 import PropTypes from "prop-types";
 import Overview from "./Overview";
 import Contact from "./Contact";
@@ -19,11 +19,7 @@ function TabPanel(props) {
       aria-labelledby={`simple-tab-${index}`}
       {...other}
     >
-      {value === index && (
-        <Box sx={{ py: 3 }}>
-          <Typography>{children}</Typography>
-        </Box>
-      )}
+      {value === index && <Box sx={{ py: 3 }}>{children}</Box>}
     </div>
   );
 }
@@ -77,10 +73,10 @@ function DetailsTab() {
         </Tabs>
       </Box>
       <TabPanel value={value} index={0}>
-        <Overview/>
+        <Overview />
       </TabPanel>
       <TabPanel value={value} index={1}>
-        <Contact/>
+        <Contact />
       </TabPanel>
     </Box>
   );

@@ -1,4 +1,4 @@
-import {Pagination, Stack} from '@mui/material';
+import { Pagination, Stack } from "@mui/material";
 
 function PaginationRounded() {
   return (
@@ -9,4 +9,3 @@ function PaginationRounded() {
 }
 
 export default PaginationRounded;
-

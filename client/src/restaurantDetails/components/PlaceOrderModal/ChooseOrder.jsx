@@ -1,6 +1,4 @@
 import {
-  Dialog,
-  DialogTitle,
   DialogContent,
   DialogActions,
   Typography,
@@ -8,12 +6,9 @@ import {
 } from "@mui/material";
 import OrderItem from "./OrderItem/OrderItem";
 
-function PlaceOrderModal({ showPlaceOrder, handleClose }) {
+function ChooseOrder({ handleShowEnterAddress }) {
   return (
-    <Dialog open={showPlaceOrder} onClose={handleClose}>
-      <DialogTitle sx={{ fontSize: "2rem", fontWeight: 600, color: "#192F60" }}>
-        The Big Chill Cakery
-      </DialogTitle>
+    <>
       <DialogContent sx={{ my: "2rem" }}>
         <OrderItem buttonMode={true} />
         <OrderItem buttonMode={false} />
@@ -24,7 +19,7 @@ function PlaceOrderModal({ showPlaceOrder, handleClose }) {
           justifyContent: "space-between",
           px: "1.5rem",
           py: "1rem",
-          backgroundColor: "#F5F8FF",
+          backgroundColor: "#f5efef",
         }}
       >
         <Typography
@@ -36,6 +31,7 @@ function PlaceOrderModal({ showPlaceOrder, handleClose }) {
           Subtotal ₹178
         </Typography>
         <Button
+          onClick={() => handleShowEnterAddress()}
           sx={{
             backgroundColor: "#CE0505",
             ":hover": { backgroundColor: "#CE0505" },
@@ -45,8 +41,8 @@ function PlaceOrderModal({ showPlaceOrder, handleClose }) {
           Pay Now
         </Button>
       </DialogActions>
-    </Dialog>
+    </>
   );
 }
 
-export default PlaceOrderModal;
+export default ChooseOrder;
