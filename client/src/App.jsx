@@ -1,6 +1,7 @@
 import {createTheme, ThemeProvider} from "@mui/material";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
+import Navbar from "./navbar/Navbar";
 import RestaurantSearch from "./restaurantSearch/pages/RestaurantSearch";
 import RestaurantsByMealType from "./restaurantsByMealType/pages/RestaurantsByMealType";
 import RestaurantDetails from "./restaurantDetails/pages/restaurantDetails";
@@ -24,6 +25,7 @@ function App() {
 });
 
   return (<ThemeProvider theme={theme}>
+  <Navbar />
     <Router>
       <Routes>
         <Route path="/restaurantSearch" element={<RestaurantSearch/>}/>
