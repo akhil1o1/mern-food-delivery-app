@@ -8,6 +8,9 @@ import {
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 
+
+/// component from mui
+
 function Navbar() {
   return (
     <Box sx={{ flexGrow: 1}}>
