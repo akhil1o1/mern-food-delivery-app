@@ -23,7 +23,7 @@ function Navbar() {
             aria-label="menu"
             sx={{ mr: 2 }}
           >
-            <MenuIcon />
+            {/* <MenuIcon /> */}
           </IconButton>
           <Typography variant="h6" fontWeight="600" component="div" sx={{ flexGrow: 1 }}>
             FDS

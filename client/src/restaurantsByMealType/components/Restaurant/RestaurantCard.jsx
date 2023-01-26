@@ -1,4 +1,4 @@
-import { Card, Typography, Box, Stack } from "@mui/material";
+import { Card, Typography, Box, Stack, CardActionArea } from "@mui/material";
 import { Link } from "react-router-dom";
 
 import breakfastImg from "../../../assets/images/breakfast.png";
@@ -15,11 +15,11 @@ function RestaurantCard() {
     <Card
       sx={{
         borderRadius: "10px",
-        padding: "2rem",
         boxShadow:
           "rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px",
       }}
     >
+    <CardActionArea sx={{padding: "2rem"}}>
       <Link className={classes.card_link} to="/restaurantDetails">
         {/* top half of the card */}
         <Box display="flex">
@@ -94,6 +94,7 @@ function RestaurantCard() {
           </Box>
         </Box>
       </Link>
+      </CardActionArea>
     </Card>
   );
 }

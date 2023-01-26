@@ -37,11 +37,11 @@ function SelectLocation() {
           label="Location"
           onChange={handleChange}
         >
-          <MenuItem value="">
+          <MenuItem value="" sx={{ color: "#8C96AB" }}>
             <em>None</em>
           </MenuItem>
           {locations.map((location) => (
-            <MenuItem key={nanoid()} value={location}>
+            <MenuItem key={nanoid()} value={location} sx={{ color: "#8C96AB" }}>
               {location}
             </MenuItem>
           ))}
